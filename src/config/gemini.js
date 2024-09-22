@@ -1,9 +1,34 @@
-// const { GoogleGenerativeAI } = require("@google/generative-ai");
-// const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+// async function runChat(prompt) {
+//     // Définir l'URL de l'API
+//     const apiUrl = 'http://localhost:8083/api/flows';
 
-// async function runChat() {
-//   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
-//   const result = await model.generateContent(["Explain how AI works"]);
-//   console.log(result.response.text());
+//     // Créer l'objet de données à envoyer
+//     const requestData = {
+//         customerId: "2121",
+//         request: prompt
+//     };
+
+//     try {
+//         // Faire la requête POST
+//         const response = await fetch(apiUrl, {
+//             method: 'POST', // Méthode HTTP
+//             headers: {
+//                 'Content-Type': 'application/json'
+//             },
+//             body: JSON.stringify(requestData) // Convertir les données en JSON
+//         });
+
+//         if (!response.ok) {
+//             throw new Error('Network response was not ok');
+//         }
+
+//         // Traiter la réponse
+//         const responseData = await response.json();
+//         console.log('Response:', responseData);
+//     } catch (error) {
+//         // Gérer les erreurs
+//         console.error('Error:', error);
+//     }
 // }
-// runChat();
+
+// export default runChat

@@ -24,6 +24,7 @@ function Sidebar() {
                     <img src={assets.plus_icon} alt="" />
                     {extended ? <p>New Chat</p> : null}
                 </div>
+                
                 {extended ?
                     <div className="recent">
                         <p className="recent-title">Recent</p>
