@@ -42,7 +42,7 @@ function Sidebar() {
 
             </div>
 
-            <div className="bottom">
+            {/* <div className="bottom">
                 <div className="bottom-item recent-entry">
                     <img src={assets.question_icon} alt="" />
                     {extended ? <p>Help</p> : null}
@@ -62,7 +62,7 @@ function Sidebar() {
                 </div>
 
 
-            </div>
+            </div> */}
 
         </div>
     )
