@@ -40,7 +40,7 @@ const ContextProvider = (props) => {
 
     const [input, setInput] = useState("");
     const [recentPrompt, setRecentPrompt] = useState([]);
-    const [prevPrompts, setPrevPrompts] = useState(false);
+    const [prevPrompts, setPrevPrompts] = useState([]);
     const [showResult, setShowResult] = useState(false);
     const [loading, setLoading] = useState(false);
     const [resultData, setResultData] = useState("");
@@ -96,12 +96,12 @@ const ContextProvider = (props) => {
         let response;
 
         if (prompt !== undefined) {
-            response = await runChat(prompt);
+            response = "hjsdhsjdnjzndznn" //await runChat(prompt);
             setRecentPrompt(prompt);
         } else {
             setPrevPrompts((prev) => [...prev, input]);
             setRecentPrompt(input);
-            response = await runChat(input);
+            response ="hjsdhsjdnjzndznn" // await runChat(input);
         }
 
         // Check if response is not null before trying to process it

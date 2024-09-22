@@ -56,7 +56,7 @@ function Main() {
                                         <div className='loader'>
                                         </div>
                                         :
-                                        <p dangerouslySetInnerHTML={{ __html: resultData }}>{resultData}</p>
+                                        <p dangerouslySetInnerHTML={{ __html: resultData }}></p>
 
                                 }
                             </div>
